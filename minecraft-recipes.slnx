@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="minecraft-recipes.client/minecraft-recipes.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="minecraft-recipes.Server/minecraft-recipes.Server.csproj" />
+</Solution>

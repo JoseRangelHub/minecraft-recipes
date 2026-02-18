@@ -1,0 +1,6 @@
+@minecraft_recipes.Server_HostAddress = http://localhost:5095
+
+GET {{minecraft_recipes.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
