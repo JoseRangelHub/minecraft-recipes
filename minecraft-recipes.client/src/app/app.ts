@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, signal } from '@angular/core';
+import { Component, OnInit, signal } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +8,7 @@ import { Component, signal } from '@angular/core';
   styleUrl: './app.css'
 })
 export class App implements OnInit {
-  public forecasts: WeatherForecast[] = [];
+  public forecasts: any[] = [];
 
   constructor(private http: HttpClient) {}
 
@@ -17,7 +17,7 @@ export class App implements OnInit {
   }
 
   getForecasts() {
-    this.http.get<WeatherForecast[]>('/weatherforecast').subscribe(
+    this.http.get<any[]>('/weatherforecast').subscribe(
       (result) => {
         this.forecasts = result;
       },

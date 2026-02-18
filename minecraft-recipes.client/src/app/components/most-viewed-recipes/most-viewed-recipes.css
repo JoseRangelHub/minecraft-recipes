@@ -1,0 +1,10 @@
+:host {
+  display: flex;
+  padding: 10px;
+}
+
+h2 {
+  color: #808080;
+  margin-top: 30px;
+  margin-left: 20px;
+}
